@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Função 04</title>
+
+    <!--4) Faça uma função que leia cinco valores inteiros, com uma estrutura de repetição,
+determine e mostre o maior e o menor deles.-->
+
+</head>
+<body>
+
+    <script>
+
+        function numero() {
+
+        let maiorNum = Number.MIN_SAFE_INTEGER;
+
+        let menorNum = Number.MAX_SAFE_INTEGER;
+
+        for (let i = 0; i < 5; i++) {
+        const valor = parseInt(prompt(`Insira os 5 números:`));
+
+            if (valor > maiorNum) {
+            maiorNum = valor;
+            }
+            
+            if (valor < menorNum) {
+            menorNum = valor;
+            }
+        }
+        console.log(`O maior valor dentre estes é ${maiorNum} e o menor valor dentre estes é ${menorNum}`)
+        }
+    
+        numero()
+
+
+
+         
+    //Nessa atividade utilizei os comandos "min_safe_integer" e também o "max_safe_integer" para encontrar o menor e maior número dentre os 5 números inseridos, depois disso utilizei o comando "if" assim retornando os valores e encerrando o código.
+    
+    
+    </script>
+
+</body>
+</html>

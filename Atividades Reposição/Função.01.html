@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Função 01</title>
+</head>
+<body>
+
+    <!--1) Escreva um script que recebe as 3 notas de um aluno por parâmetro e uma letra.
+Se a letra for A o procedimento calcula a média aritmética das notas do aluno, se for
+P, a sua média ponderada (pesos: 5, 3 e 2). A média calculada também deve retornar
+por parâmetro.-->
+    
+    <script>
+    
+        var numb1 = parseFloat(prompt("Insira sua primeira nota:"))
+
+        var numb2 = parseFloat(prompt("Insira sua segunda nota:"))
+
+        var numb3 = parseFloat(prompt("Insira sua terceira nota:"))
+
+        var letra = prompt("Insira uma letra A para ser média aritmética ou B para ser média ponderada:")
+        
+
+        function fun1 (numb1, numb2, numb3, letra){
+
+            if(letra == "A"){
+                document.write("Sua média aritmética é "+((numb1 + numb2 + numb3)/3))
+                
+            }else if(letra == "B"){
+                document.write("Sua média ponderada é "+(((numb1*5) + (numb2*3) + (numb3*2))/10))
+            }
+        }
+
+        fun1 (numb1, numb2, numb3, letra)
+
+        //Depois de declarar as variavéis "numb1, numb2, numb3 e letra" elas irão armazenar os dados que o usuario inserir. usei em seguida o "Function" para ler e rever as variavéis, e por final utilizei "if e else if" para fazer a média aritmética e a ponderada, para assim chegar no resultado final do código.
+        
+    </script>
+   
+</body>
+</html>

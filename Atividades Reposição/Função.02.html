@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade - Função 02</title>
+
+</head>
+<body>
+    <!-- 2) Faça uma função que receba um único valor representando segundos. Essa função
+    deverá convertê-lo para hora, minutos e segundos. Todas as variáveis devem ser
+    passadas como parâmetro, não havendo variáveis globais. -->
+
+    <script>
+
+        function horario (){
+
+            segundo = parseInt(prompt('Insira o determinado tempo em segundos, para ser convertido para horas, minutos e segundos.:'))
+
+            const hora = Math.floor(segundo / 3600)
+
+            const minuto = Math.floor(segundo / 60)
+
+            var segundo = Math.floor(segundo % 60)
+
+            document.write(`O valor convertido é ${hora}:${minuto}:${segundo}`)
+        }
+
+        horario ()
+
+
+
+
+        //Neste código, utilizei o comando "Const" para dizer as horas e minutos e utilizei do "Var" para os segundos, utilizei o "Math.floor" para tranformar em um número inteiro que seja mais próximo, voltando ao console das horas, minutos e segundos, assim chegando ao resultado esperado e finalizando o código.
+    </script>
+</body>
+</html>
